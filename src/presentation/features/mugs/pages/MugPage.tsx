@@ -1,10 +1,7 @@
 import DesignEditor from "../../../../shared/components/design-editor/DesignEditor";
-import { mugColors } from "../data/mugColors";
 import MugTypeCarousel from "../components/MugTypeCarousel";
-
-import { mugVariants } from "../data/mugVariants";
-
 import { useMugVariant } from "../hooks/useMugVariant";
+import { mugVariants } from "../data/mugVariants";
 
 const MugPage = () => {
   const {
@@ -27,7 +24,7 @@ const MugPage = () => {
           marginBottom: "20px",
         }}
       >
-        Personaliza tu Mug
+        Mugs
       </h1>
 
 
@@ -35,7 +32,6 @@ const MugPage = () => {
       <DesignEditor
         frontImage={selectedVariant.frontImage}
         backImage={selectedVariant.backImage}
-        colors={mugColors}
       />
 
       <MugTypeCarousel 

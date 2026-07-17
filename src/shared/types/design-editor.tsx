@@ -9,3 +9,10 @@ export interface Position {
   y: number;
 }
 
+export interface DesignEditorProps {
+  frontImage: string;
+  backImage: string;
+  colors?: EditorColor[] | null;
+  colorPickerValue?: string;
+  onColorPickerChange?: ((color: string) => void) | null;
+}

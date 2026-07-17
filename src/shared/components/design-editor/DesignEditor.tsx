@@ -6,36 +6,35 @@ import ColorSelector from "./ColorSelector";
 import DesignPreview from "./DesignPreview";
 import ColorPalette from "./ColorPalette";
 
-
 interface Props {
-  colors: EditorColor[];
   frontImage: string;
   backImage: string;
+  colors?: EditorColor[] | null;   // opcional → controla ColorSelector
+  showColorPicker?: boolean;        // opcional → controla ColorPalette
 }
 
 const DesignEditor = ({
   frontImage,
   backImage,
   colors,
+  showColorPicker = false,
 }: Props) => {
+  const hasColorSelector = !!colors && colors.length > 0;
+
   const {
     selectedColor,
     setSelectedColor,
     setCustomColor,
     view,
     toggleView,
-
     currentDesign,
-
     currentSizeCm,
     setCurrentSizeCm,
-
     currentPosition,
     setCurrentPosition,
-
     uploadDesign,
   } = useDesignEditor({
-    colors,
+    colors: colors ?? [],  // el hook recibe array vacío si no hay colores
   });
 
   return (
@@ -49,60 +48,52 @@ const DesignEditor = ({
       <DesignPreview
         frontImage={frontImage}
         backImage={backImage}
-
         view={view}
-
-        color={selectedColor.color}
-
+        color={selectedColor?.color ?? "#ffffff"}
         design={currentDesign}
-
-        designSizeCm={
-          currentSizeCm
-        }
-
+        designSizeCm={currentSizeCm}
         position={currentPosition}
-
-        onMove={
-          setCurrentPosition
-        }
+        onMove={setCurrentPosition}
       />
 
-      <button onClick={toggleView}>
-        Ver{" "}
-        {view === "front"
-          ? "espalda"
-          : "frente"}
+      <button
+        style={{
+          padding: "14px",
+          borderRadius: "14px",
+          background: "#222",
+          color: "white",
+          textAlign: "center",
+          cursor: "pointer",
+          fontSize: "14px",
+        }}
+        onClick={toggleView}
+      >
+        Ver {view === "front" ? "espalda" : "frente"}
       </button>
 
-      <DesignUploader
-        onUpload={uploadDesign}
-      />
+      <DesignUploader onUpload={uploadDesign} />
 
       <DesignSizeSlider
         value={currentSizeCm}
-        onChange={
-          setCurrentSizeCm
-        }
+        onChange={setCurrentSizeCm}
       />
 
-      <ColorSelector
-        colors={colors}
-        selectedId={
-          selectedColor.id
-        }
-        onSelect={
-          setSelectedColor
-        }
-      />
+      {/* Solo se renderiza si se pasaron colores */}
+      {hasColorSelector && (
+        <ColorSelector
+          colors={colors!}
+          selectedId={selectedColor?.id ?? 0}
+          onSelect={setSelectedColor}
+        />
+      )}
 
-      <ColorPalette
-        color={
-          selectedColor.color
-        }
-        onChange={
-          setCustomColor
-        }
-      />
+      {/* Solo se renderiza si showColorPicker es true */}
+      {showColorPicker && (
+        <ColorPalette
+          color={selectedColor?.color ?? "#ffffff"}
+          onChange={setCustomColor}
+        />
+      )}
     </div>
   );
 };

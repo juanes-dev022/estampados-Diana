@@ -10,7 +10,7 @@ const MugsView = () => {
       </h2>
 
       <button style={{marginBottom: "20px"}}>
-        <Link to="/mug">perosnalizar tu mug</Link>
+        <Link to="/mug">personaliza tu mug</Link>
       </button>
 
       <ProductGrid products={mugsData} />

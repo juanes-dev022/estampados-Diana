@@ -25,6 +25,7 @@ const ToteBagPage = () => {
         frontImage={frontImage}
         backImage={backImage}
         colors={toteBagColors}
+        showColorPicker={true}
       />
     </div>
   );
