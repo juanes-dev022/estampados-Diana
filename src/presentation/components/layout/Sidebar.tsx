@@ -60,7 +60,7 @@ const Sidebar = ({ isOpen, onClose }: Props) => {
             </li> */}
             <li>
               <Link to="/category/tote-bags" onClick={onClose}>
-                Togas
+                Tote bag
               </Link>
             </li>
           </ul>

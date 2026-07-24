@@ -9,13 +9,46 @@ export interface MugVariant {
 }
 
 import MetalizadoFront from "../../../../assets/images/mugs/metalicos.png";
-import MetalizadoBack from "../../../../assets/images/mugs/metalicos-removebg-preview.png";
+import MetalizadoBack from "../../../../assets/images/mugs/metalicos.png";
 
-import magicFront from "../../../../assets/images/mugs/mug9.jpeg";
-import magicBack from "../../../../assets/images/mugs/mugBasico.png";
+import mugPeltreFront from "../../../../assets/images/mugs/mugPeltre.png";
+import mugPeltreBack from "../../../../assets/images/mugs/mugPeltre.png";
 
-import travelFront from "../../../../assets/images/mugs/mugBasico.png";
-import travelBack from "../../../../assets/images/mugs/mugBasico.png";
+import mugMagicoFront from "../../../../assets/images/mugs/mugMagico.png";
+import mugMagicoBack from "../../../../assets/images/mugs/mugMagico.png";
+
+import mugMagicoEscarchadoFront from "../../../../assets/images/mugs/mugMagicoEscarchado.png";
+import mugMagicoEscarchadoBack from "../../../../assets/images/mugs/mugMagicoEscarchado.png";
+
+import mugRecuadroFront from "../../../../assets/images/mugs/mugRecuadro.png";
+import mugRecuadroBack from "../../../../assets/images/mugs/mugRecuadro.png";
+
+import mugTapaEspejoFront from "../../../../assets/images/mugs/mugTapaEspejo.png";
+import mugTapaEspejoBack from "../../../../assets/images/mugs/mugTapaEspejo.png";
+
+import mugTinteroFront from "../../../../assets/images/mugs/mugTintero.png";
+import mugTinteroBack from "../../../../assets/images/mugs/mugTintero.png";
+
+import mugTinterosFront from "../../../../assets/images/mugs/mugTinteros.png";
+import mugTinterosBack from "../../../../assets/images/mugs/mugTinteros.png";
+
+import mugApilableFront from "../../../../assets/images/mugs/mugApilable.png";
+import mugApilableBack from "../../../../assets/images/mugs/mugApilable.png";
+
+import mugApilablesFront from "../../../../assets/images/mugs/mugApilables.png";
+import mugApilablesBack from "../../../../assets/images/mugs/mugApilables.png";
+
+import mugParejaFront from "../../../../assets/images/mugs/mugPareja.png";
+import mugParejaBack from "../../../../assets/images/mugs/mugPareja.png";
+
+import mugOrejaGordaFront from "../../../../assets/images/mugs/mugOrejaGorda.png";
+import mugOrejaGordaBack from "../../../../assets/images/mugs/mugOrejaGorda.png";
+
+import mugOrejaBambuFront from "../../../../assets/images/mugs/mugOrejaBambu.png";
+import mugOrejaBambuBack from "../../../../assets/images/mugs/mugOrejaBambu.png";
+
+import mugBordeDoradoFront from "../../../../assets/images/mugs/mugBordeDorado.png";
+import mugBordeDoradoBack from "../../../../assets/images/mugs/mugBordeDorado.png";
 
 export const mugVariants: MugVariant[] = [
   {
@@ -32,118 +65,118 @@ export const mugVariants: MugVariant[] = [
     id: 2,
     name: "PELTRE",
 
-    frontImage: magicFront,
-    backImage: magicBack,
+    frontImage: mugPeltreFront,
+    backImage: mugPeltreBack,
 
-    preview: magicFront,
+    preview: mugPeltreFront,
   },
 
   {
     id: 3,
     name: "MAGICO",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugMagicoFront,
+    backImage: mugMagicoBack,
 
-    preview: travelFront,
+    preview: mugMagicoFront,
   },
-    {
+  {
     id: 4,
     name: "MAGICO ESCARCHADO",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugMagicoEscarchadoFront,
+    backImage: mugMagicoEscarchadoBack,
 
-    preview: travelFront,
-  },  {
+    preview: mugMagicoEscarchadoFront,
+  },
+  {
     id: 5,
     name: "RECUADRO",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugRecuadroFront,
+    backImage: mugRecuadroBack,
 
-    preview: travelFront,
+    preview: mugRecuadroFront,
   },
-    {
+  {
     id: 6,
     name: "TAPA ESPEJO",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugTapaEspejoFront,
+    backImage: mugTapaEspejoBack,
 
-    preview: travelFront,
+    preview: mugTapaEspejoFront,
   },
   {
     id: 7,
     name: "TINTERO",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugTinteroFront,
+    backImage: mugTinteroBack,
 
-    preview: travelFront,
+    preview: mugTinteroFront,
   },
   {
     id: 8,
-    name: "TINTERO 2",
+    name: "TINTEROS",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugTinterosFront,
+    backImage: mugTinterosBack,
 
-    preview: travelFront,
+    preview: mugTinterosFront,
   },
   {
     id: 9,
     name: "APILABLE",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugApilableFront,
+    backImage: mugApilableBack,
 
-    preview: travelFront,
+    preview: mugApilableFront,
   },
-{
+  {
     id: 10,
-    name: "APILABLE 2",
+    name: "APILABLES",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugApilablesFront,
+    backImage: mugApilablesBack,
 
-    preview: travelFront,
+    preview: mugApilablesFront,
   },
-    {
+  {
     id: 11,
     name: "MUG PAREJA",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugParejaFront,
+    backImage: mugParejaBack,
 
-    preview: travelFront,
+    preview: mugParejaFront,
   },
-    {
+  {
     id: 12,
     name: "OREJA GORDA",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugOrejaGordaFront,
+    backImage: mugOrejaGordaBack,
 
-    preview: travelFront,
+    preview: mugOrejaGordaFront,
   },
-    {
+  {
     id: 13,
     name: "OREJA BAMBU",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugOrejaBambuFront,
+    backImage: mugOrejaBambuBack,
 
-    preview: travelFront,
+    preview: mugOrejaBambuFront,
   },
-    {
+  {
     id: 14,
     name: "O Y BORDE DORADO",
 
-    frontImage: travelFront,
-    backImage: travelBack,
+    frontImage: mugBordeDoradoFront,
+    backImage: mugBordeDoradoBack,
 
-    preview: travelFront,
+    preview: mugBordeDoradoFront,
   },
-  
 ];

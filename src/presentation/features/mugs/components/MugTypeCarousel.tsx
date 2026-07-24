@@ -48,16 +48,13 @@ const MugTypeCarousel = ({
             style={{
               minWidth: "120px",
 
-              border:
-                selectedId === variant.id
-                  ? "2px solid #111"
-                  : "1px solid #ddd",
+              border: "none",
 
-              borderRadius: "16px",
+              borderRadius: 0,
 
-              padding: "10px",
+              padding: 0,
 
-              background: "#fff",
+              background: "transparent",
 
               cursor: "pointer",
 
@@ -71,6 +68,17 @@ const MugTypeCarousel = ({
                 width: "100%",
                 height: "100px",
                 objectFit: "contain",
+
+                borderRadius: "16px",
+
+                border:
+                  selectedId === variant.id
+                    ? "2px solid #111"
+                    : "1px solid #ddd",
+
+                background: "transparent",
+
+                transition: "0.2s",
               }}
             />
 
