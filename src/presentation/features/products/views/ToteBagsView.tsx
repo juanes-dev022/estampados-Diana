@@ -1,5 +1,5 @@
 import ProductGrid from "../components/ProductGrid"
-import { toteBagsData } from "../data/toteBagsData"
+import { toteBagsData } from "../../tote-bags/data/toteBagsData"
 import { Link } from "react-router-dom";
 
 const ToteBagsView = () =>{

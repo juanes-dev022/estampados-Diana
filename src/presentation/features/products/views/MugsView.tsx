@@ -1,5 +1,5 @@
 import ProductGrid from "../components/ProductGrid";
-import { mugsData } from "../data/mugsData";
+import { mugsData } from "../../mugs/data/mugsData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

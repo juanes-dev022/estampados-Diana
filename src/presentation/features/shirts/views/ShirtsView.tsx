@@ -1,17 +1,24 @@
 import DesignEditor from "../../../../shared/components/design-editor/DesignEditor";
 
-import frontImage from "../../../../assets/images/camisaBlancaprueb2.png";
-import backImage from "../../../../assets/images/camisaAtras.png";
+import frontImage from "../../../../assets/images/shirts/camisaBlancaFrente.png";
+import backImage from "../../../../assets/images/shirts/camisaBLancaAtras.png";
 
 import { shirtColors } from "../data/shirtColors";
+import ProductCarousel from "../components/ShirtsCaroucelComponent";
+import { shirtsCarouselData } from "../data/shirtsCarouselData";
 
 const ShirtsView = () => {
   return (
-    <DesignEditor
-      frontImage={frontImage}
-      backImage={backImage}
-      colors={shirtColors}
-    />
+
+    <div>
+      <ProductCarousel products={shirtsCarouselData} />
+    
+      <DesignEditor
+        frontImage={frontImage}
+        backImage={backImage}
+        colors={shirtColors}
+      />
+    </div>
   );
 };
 
