@@ -1,14 +1,9 @@
 import ProductCard from "./ProductCard";
-
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  image: string;
-}
+import ClickableWrapper from "../../mugs/components/ClickableWrapper";
+import type { mugType } from "../../mugs/types/mugType";
 
 interface Props {
-  products: Product[];
+  products: mugType[];
 }
 
 const ProductGrid = ({ products }: Props) => {
@@ -21,12 +16,13 @@ const ProductGrid = ({ products }: Props) => {
       }}
     >
       {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          name={product.name}
-          price={product.price}
-          image={product.image}
-        />
+        <ClickableWrapper key={product.id} to={product.to}>
+          <ProductCard
+            name={product.name}
+            price={product.price}
+            image={product.image}
+          />
+        </ClickableWrapper>
       ))}
     </div>
   );
