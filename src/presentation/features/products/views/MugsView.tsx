@@ -1,7 +1,6 @@
 import ProductGrid from "../components/ProductGrid";
 import { mugsData } from "../../mugs/data/mugsData";
 import { Link } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
 
 const MugsView = () => {
   return (

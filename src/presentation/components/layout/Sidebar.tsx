@@ -63,6 +63,11 @@ const Sidebar = ({ isOpen, onClose }: Props) => {
                 Tote bag
               </Link>
             </li>
+            <li>
+              <Link to="/Llaveros" onClick={onClose}>
+                Llaveros
+              </Link>
+            </li>
           </ul>
         </nav>
       </aside>

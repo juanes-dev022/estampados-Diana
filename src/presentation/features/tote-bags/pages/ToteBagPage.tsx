@@ -18,7 +18,7 @@ const ToteBagPage = () => {
           marginBottom: "20px",
         }}
       >
-        Personaliza tu Tote Bag
+        Personaliza Tu Tote Bag
       </h1>
 
       <DesignEditor
