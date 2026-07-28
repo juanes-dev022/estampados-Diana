@@ -1,0 +1,94 @@
+/* CalendarsPage.css */
+
+.calendars-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Arial, sans-serif;
+  color: #f2f2f2;
+}
+
+/* Línea de specs del catálogo general */
+
+.spec-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.spec-line__tag {
+  font-size: 13px;
+  color: #d9d9d9;
+  background: #2a2a2a;
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.spec-line__price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e8b24d;
+  margin-left: 4px;
+}
+
+/* Texto de detalle dentro de cada colapsable */
+
+.detail-card__specs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-card__specs li {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.detail-card__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.detail-card__divider {
+  height: 0;
+  border-top: 2px dashed #3a3a3a;
+}
+
+.detail-card__addons-label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8a8a8a;
+  margin: 0;
+}
+
+.detail-card__addons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-card__addons li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+  color: #d9d9d9;
+}
+
+.detail-card__addons li span:last-child {
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}

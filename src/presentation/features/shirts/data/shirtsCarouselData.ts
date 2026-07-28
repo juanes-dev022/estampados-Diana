@@ -55,13 +55,13 @@ export const shirtsCarouselData: ShirtsCaroucel[] = [
   {
     id: 6,
     image: algodonPeinadoPresentacion,
-    price: "$35.000",
-    description: "Camiseta algodón peinado cuello redondo - tallas mayores",
+    price: "",
+    description: "",
   },
   {
     id: 7,
     image: algodonCuelloRedondoTallaMayores,
-    price: "$35.000",
+    price: "$22.000",
     description: "Camiseta algodón peinado cuello redondo - tallas mayores",
   },
   {
