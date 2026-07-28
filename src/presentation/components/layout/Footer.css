@@ -1,0 +1,34 @@
+/* Footer.css */
+
+.footer {
+  width: 100%;
+  background: #111;
+  border-top: 1px solid #333;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer__section p {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__icons img {
+  transition: opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+.footer__icons img:hover {
+  opacity: 1;
+}

@@ -1,3 +1,5 @@
+import logo from "../../../assets/images/logoestampadosDiana.png";
+
 interface Props {
   onMenuClick: () => void;
 }
@@ -7,11 +9,11 @@ const Navbar = ({ onMenuClick }: Props) => {
     <header
       style={{
         width: "100%",
-        display: "flex",
+        display: "grid",
+        gridTemplateColumns: "1fr auto 1fr",
         alignItems: "center",
-        justifyContent: "space-between",
         padding: "16px 20px",
-        background: "#111",
+        background: "rgb(5, 3, 0)",
         color: "white",
         boxSizing: "border-box",
       }}
@@ -24,23 +26,27 @@ const Navbar = ({ onMenuClick }: Props) => {
           border: "none",
           color: "white",
           cursor: "pointer",
+          justifySelf: "start",
         }}
       >
         ☰
       </button>
 
-      <span
+      <img
+        src={logo}
+        alt="Logo"
         style={{
-          fontSize: "18px",
-          fontWeight: 600,
+          height: "100px",
+          borderRadius: "20px",
+          objectFit: "contain",
+          justifySelf: "center",
         }}
-      >
-        Estampados Diana
-      </span>
+      />
 
-      <div style={{ width: "24px" }} />
+      <div />
     </header>
   );
 };
 
 export default Navbar;
+

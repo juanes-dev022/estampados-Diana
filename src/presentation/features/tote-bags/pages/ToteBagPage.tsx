@@ -1,7 +1,7 @@
 import DesignEditor from "../../../../shared/components/design-editor/DesignEditor";
 
-import frontImage from "../../../../assets/images/tote-bags/image-removebg-preview.png";
-import backImage from "../../../../assets/images/tote-bags/image-removebg-preview.png";
+import frontImage from "../../../../assets/images/tote-bags/tote-bag-presentacion.png";
+import backImage from "../../../../assets/images/tote-bags/tote-bag-presentacion.png";
 
 import { toteBagColors } from "../data/toteBagColors";
 

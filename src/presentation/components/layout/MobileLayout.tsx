@@ -1,6 +1,5 @@
 
 
-import { useScrollToBottom } from "../../hooks/useScrollToBottom";
 import WhatsAppButton from "../common/WhatsAppButton";
 import type { ReactNode } from "react";
 import { useState } from "react";
@@ -14,29 +13,34 @@ interface Props {
 
 const MobileLayout = ({ children }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const showFooter = useScrollToBottom();
-
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
       <Navbar onMenuClick={() => setIsOpen(true)} />
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
       <main
         style={{
+          flex: 1,
           maxWidth: 480,
           margin: "0 auto",
           padding: "16px",
-          paddingBottom: "80px",
           width: "100%",
+          boxSizing: "border-box",
         }}
       >
         {children}
-        {showFooter && <Footer />}
       </main>
-      <Footer/>
+
+      <Footer />
       <WhatsAppButton />
-    </>
+    </div>
   );
 };
 
