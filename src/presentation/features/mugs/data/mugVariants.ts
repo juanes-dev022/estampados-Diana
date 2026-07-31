@@ -50,7 +50,20 @@ import mugOrejaBambuBack from "../../../../assets/images/mugs/mugOrejaBambu.png"
 import mugBordeDoradoFront from "../../../../assets/images/mugs/mugBordeDorado.png";
 import mugBordeDoradoBack from "../../../../assets/images/mugs/mugBordeDorado.png";
 
+import estandarmugFront from "../../../../assets/images/mugs/mugBasico.png";
+import estandarMugBack from "../../../../assets/images/mugs/mugBasico.png";
+
+
 export const mugVariants: MugVariant[] = [
+  {
+    id: 15,
+    name: "estandar",
+
+    frontImage: estandarmugFront,
+    backImage: estandarMugBack,
+
+    preview: estandarmugFront,
+  },
   {
     id: 1,
     name: "F Y O METALIZADO",
@@ -60,7 +73,6 @@ export const mugVariants: MugVariant[] = [
 
     preview: MetalizadoFront,
   },
-
   {
     id: 2,
     name: "PELTRE",

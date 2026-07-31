@@ -1,12 +1,20 @@
 import { useCarousel } from "../hooks/useCarousel";
+import { useNavigate } from "react-router-dom";
+import combo1 from "../../../../assets/images/home/camisa + termo espartano.png";
 
-const images = [
-  "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
-  "https://images.unsplash.com/photo-1585386959984-a4155224a1ad",
-  "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+interface CarouselItem {
+  src: string;
+  href: string;
+}
+
+const images: CarouselItem[] = [
+  { src: combo1, href: "" },
+  { src: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad", href: "/promocion-2" },
+  { src: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519", href: "/promocion-3" },
 ];
 
 const Carousel = () => {
+  const navigate = useNavigate();
   const {
     current,
     next,
@@ -14,20 +22,21 @@ const Carousel = () => {
     onTouchStart,
     onTouchMove,
     onTouchEnd,
+    onItemClick,
   } = useCarousel({ total: images.length });
+
+  const handleClick = (e: React.MouseEvent, href: string) => {
+    const wasSwipe = onItemClick(e);
+    if (!wasSwipe) navigate(href);
+  };
 
   return (
     <div
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        borderRadius: "12px",
-      }}
+      style={{ position: "relative", overflow: "hidden", borderRadius: "12px" }}
       onTouchStart={(e) => onTouchStart(e.touches[0].clientX)}
       onTouchMove={(e) => onTouchMove(e.touches[0].clientX)}
       onTouchEnd={onTouchEnd}
     >
-      {/* Slides */}
       <div
         style={{
           display: "flex",
@@ -35,37 +44,35 @@ const Carousel = () => {
           transition: "transform 0.4s ease",
         }}
       >
-        {images.map((src, i) => (
-          <img
+        {images.map((item, i) => (
+          <div
             key={i}
-            src={src}
-            alt="banner"
-            style={{
-              width: "100%",
-              height: "180px",
-              objectFit: "cover",
-              flexShrink: 0,
+            role="button"
+            tabIndex={0}
+            onClick={(e) => handleClick(e, item.href)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") navigate(item.href);
             }}
-          />
+            style={{ width: "100%", flexShrink: 0, cursor: "pointer" }}
+          >
+            <img
+              src={item.src}
+              alt="banner"
+              draggable={false}
+              style={{
+                width: "100%",
+                height: "300px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
+          </div>
         ))}
       </div>
 
-      {/* Botones */}
-      <button
-        onClick={prev}
-        style={arrowStyle("left")}
-      >
-        ‹
-      </button>
+      <button onClick={prev} style={arrowStyle("left")}>‹</button>
+      <button onClick={next} style={arrowStyle("right")}>›</button>
 
-      <button
-        onClick={next}
-        style={arrowStyle("right")}
-      >
-        ›
-      </button>
-
-      {/* Dots */}
       <div
         style={{
           position: "absolute",

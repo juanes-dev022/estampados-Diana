@@ -1,0 +1,134 @@
+.image-accordion {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  width: 100%;
+  max-width: 900px;
+  height: 420px;
+  margin: 0 auto;
+  /* Evita que el navegador interprete el deslizar del dedo como scroll
+     de la página, para que el gesto controle el acordeón. */
+  touch-action: none;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.image-accordion__panel {
+  position: relative;
+  flex: 1 1 0%;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: flex-grow 0.4s ease;
+}
+
+.image-accordion__panel.is-active {
+  flex: 4 1 0%;
+}
+
+.image-accordion__panel:focus-visible {
+  box-shadow: 0 0 0 3px #2563eb;
+}
+
+.image-accordion__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.image-accordion__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.25) 45%,
+    transparent 70%
+  );
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.image-accordion__panel.is-active .image-accordion__overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.image-accordion__name {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.image-accordion__role {
+  margin: 0 0 4px 0;
+  color: #e5e5e5;
+  font-size: 13px;
+}
+
+.image-accordion__cta {
+  align-self: flex-start;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #ec4899;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.image-accordion__cta:hover {
+  background: #db2777;
+}
+
+.image-accordion__cta:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Pantallas pequeñas: se mantiene horizontal, solo se reduce el alto
+   y el espaciado interno para que quepa bien en mobile. */
+@media (max-width: 640px) {
+  .image-accordion {
+    height: 260px;
+    gap: 4px;
+  }
+
+  .image-accordion__overlay {
+    padding: 12px;
+  }
+
+  .image-accordion__name {
+    font-size: 15px;
+  }
+
+  .image-accordion__role {
+    font-size: 12px;
+  }
+
+  .image-accordion__cta {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-accordion__panel,
+  .image-accordion__overlay {
+    transition: none;
+  }
+}
