@@ -1,11 +1,4 @@
-import type { ImageAccordionItem } from '../../../../domain/entities/AccordionTypes';
- 
-/**
- * Datos de ejemplo (placeholders de randomuser.me, pensados solo
- * para desarrollo). Reemplaza imageUrl, name, role y path por tu
- * contenido y rutas reales.
- */
-
+import type { ImageAccordionItem } from '../../../domain/entities/AccordionTypes';
 
 
 export const accordionData: ImageAccordionItem[] = [

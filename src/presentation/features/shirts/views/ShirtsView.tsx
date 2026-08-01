@@ -1,7 +1,7 @@
 import { shirtscollectionData } from "../data/shirtscollectionData";
 import ProductCarousel from "../components/ShirtsCaroucelComponent";
 import ProductGrid from "../../products/components/ProductGrid";
-import { shirtsCarouselData } from "../data/shirtsCarouselData";
+import { shirtsCarouselData } from "../../../../infrastructure/datasources/shirts/shirtsCarouselData";
 import { Link } from "react-router-dom";
 
 

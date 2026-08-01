@@ -1,27 +1,27 @@
-import type { ShirtsCaroucel } from "../../../../domain/entities/entities-shirt/ShirtsCaroucelType";
+
 
 import algodonCuelloRedondoTallasMenores from "../../../../assets/images/shirts/algodon peinado cuello redondo tallas menores.jpeg";
-import algodonCuelloRedondoTallaMayores from "../../../../assets/images/shirts/algodon peinado cuello redondo.jpeg";
-import algodonMangaLarga from "../../../../assets/images/shirts/algodon peinado manga larga.jpeg";
-import algodonNino from "../../../../assets/images/shirts/algodon peinado niño.jpeg";
-import algodonPeinadoMujer from "../../../../assets/images/shirts/algodon peinado.jpeg";
-import pielDeDurazno from "../../../../assets/images/shirts/camisas piel de durazno.jpeg";
-import oversizeHombre from "../../../../assets/images/shirts/oversive hombre cuello redondo.jpeg";
-import oversizeMujer from "../../../../assets/images/shirts/oversize cuello redondo mujer.jpeg";
-import telaFriaCuelloRedondo from "../../../../assets/images/shirts/tela fria cuello redondo.jpeg";
-import telaFria from "../../../../assets/images/shirts/tela fria.jpeg";
-import oversizePresentacion from "../../../../assets/images/shirts/oversizePresentacion.jpeg";
-
-import algodonPeinadoPresentacion from "../../../../assets/images/shirts/camisa algodon peinado presentacion.jpeg";
 import algodonPeinadoTallaMayoresMangaLarga from "../../../../assets/images/shirts/camisa algodon peinado talla mayores manga larga.jpeg";
+import algodonCuelloRedondoTallaMayores from "../../../../assets/images/shirts/algodon peinado cuello redondo.jpeg";
+import algodonPeinadoPresentacion from "../../../../assets/images/shirts/camisa algodon peinado presentacion.jpeg";
 import pielDuraznoPresentacion from "../../../../assets/images/shirts/camisa piel de durazno presentacion.jpeg";
-import gabrielaCapucha from "../../../../assets/images/shirts/gabriela sacos bolsillo capucha.jpeg";
 import gabrielaCuelloRedondo from "../../../../assets/images/shirts/gabriela sacos cuello redondo.jpeg";
+import type { ShirtsCaroucelType } from "../../../domain/entities/entities-shirt/ShirtsCaroucelType";
+import gabrielaCapucha from "../../../../assets/images/shirts/gabriela sacos bolsillo capucha.jpeg";
+import telaFriaCuelloRedondo from "../../../../assets/images/shirts/tela fria cuello redondo.jpeg";
+import oversizeHombre from "../../../../assets/images/shirts/oversive hombre cuello redondo.jpeg";
+import algodonMangaLarga from "../../../../assets/images/shirts/algodon peinado manga larga.jpeg";
+import oversizeMujer from "../../../../assets/images/shirts/oversize cuello redondo mujer.jpeg";
+import oversizePresentacion from "../../../../assets/images/shirts/oversizePresentacion.jpeg";
+import pielDeDurazno from "../../../../assets/images/shirts/camisas piel de durazno.jpeg";
+import algodonPeinadoMujer from "../../../../assets/images/shirts/algodon peinado.jpeg";
 import perchadoGabriela from "../../../../assets/images/shirts/perchado gabriela.jpeg";
+import algodonNino from "../../../../assets/images/shirts/algodon peinado niño.jpeg";
 import perchadoParis from "../../../../assets/images/shirts/perchado paris.jpeg";
+import telaFria from "../../../../assets/images/shirts/tela fria.jpeg";
 
-// ⚠️ Ajusta los precios reales, aquí van valores de ejemplo
-export const shirtsCarouselData: ShirtsCaroucel[] = [
+
+export const shirtsCarouselData: ShirtsCaroucelType[] = [
   {
     id: 1,
     image: telaFria,

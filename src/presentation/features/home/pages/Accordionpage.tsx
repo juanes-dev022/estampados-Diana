@@ -1,5 +1,5 @@
 import { Accordion } from '../components/Accordion';
-import { accordionData } from '../data/AccordionData';
+import { accordionData } from '../../../../infrastructure/datasources/homes/AccordionData';
 
 /**
  * Página mínima que solo monta el acordeón de imágenes (sin hero,
