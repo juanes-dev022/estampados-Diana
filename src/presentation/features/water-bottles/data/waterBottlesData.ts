@@ -2,7 +2,7 @@ import blanca from "../../../../assets/images/water bottles/blanca.png";
 import degradadoAzul from "../../../../assets/images/water bottles/degradado azul.png";
 import degradadoRosa from "../../../../assets/images/water bottles/degradado rosa.png";
 import plata from "../../../../assets/images/water bottles/plata.png";
-import type { waterBottleType } from "../types/waterBottleType";
+import type { waterBottleType } from "../../../../domain/entities/waterBottleType";
 
 export const waterBottlesData: waterBottleType[] = [
   { id: 1, name: "Botella Blanca", price: "$18", image: blanca },

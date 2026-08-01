@@ -1,4 +1,4 @@
-import type { mugType } from "../types/mugType";
+import type { mugType } from "../../../../domain/entities/mugType";
 
 export const mugsAnimeData: mugType[] = [
   {

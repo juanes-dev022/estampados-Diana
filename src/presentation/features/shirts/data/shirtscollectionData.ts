@@ -1,4 +1,4 @@
-import type {shirtType}  from "../types/shirtType";
+import type {shirtType}  from "../../../../domain/entities/entities-shirt/shirtType";
 
 export const shirtscollectionData: shirtType[] = [
   { id: 1, name: "Dia de la Madre", price: "", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-6Cop9ckh6qcdfiTTXcRUCTYzXFs6xFeI2-S0na34w&s=10", to: "/mug/mugMotherDay" },

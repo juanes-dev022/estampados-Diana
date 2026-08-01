@@ -1,9 +1,9 @@
 import { useProductCarousel } from "../hooks/Useproductcarousel";
-import type { ShirtsCaroucel } from "../types/ShirtsCaroucel";
+import type { ShirtsCaroucelType } from "../../../../domain/entities/entities-shirt/ShirtsCaroucelType";
 import "./ShirtsCaroucelComponent.css";
 
 interface ShirtsCarouselProps {
-  products: ShirtsCaroucel[];
+  products: ShirtsCaroucelType[];
 }
 
 function ProductCarousel({ products }: ShirtsCarouselProps) {

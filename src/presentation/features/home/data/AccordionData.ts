@@ -1,4 +1,4 @@
-import type { ImageAccordionItem } from '../types/AccordionTypes';
+import type { ImageAccordionItem } from '../../../../domain/entities/AccordionTypes';
  
 /**
  * Datos de ejemplo (placeholders de randomuser.me, pensados solo

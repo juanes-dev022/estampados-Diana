@@ -3,7 +3,7 @@ import  MugMotherDayPage  from "../../presentation/features/mugs/pages/MugMother
 import MugFatherDayPage from "../../presentation/features/mugs/pages/MugFatherDayPage";
 import CalendarsPage from "../../presentation/features/calendars/pages/CalendarsPage";
 import KeychainPage from "../../presentation/features/keychains/pages/KeychainPage";
-import MousePadPage from "../../presentation/features/Mouse Pad/pages/MousePadPage";
+import MousePadPage from "../../presentation/features/mouse-pad/pages/MousePadPage";
 import ToteBagPage from "../../presentation/features/tote-bags/pages/ToteBagPage";
 import MugAnimePage from "../../presentation/features/mugs/pages/MugAnimePage";
 import MobileLayout from "../../presentation/components/layout/MobileLayout";

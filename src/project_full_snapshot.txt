@@ -1,0 +1,98 @@
+]633;E;echo "=== ESTRUCTURA COMPLETA (con tamaños) ===";c09735f6-9a80-4355-a026-601a56c1ce47]633;C=== ESTRUCTURA COMPLETA (con tamaños) ===
+4,0K	./app/router/AppRouter.tsx
+4,0K	./App.tsx
+4,0K	./index.css
+4,0K	./main.tsx
+4,0K	./presentation/components/common/WhatsAppButton.tsx
+4,0K	./presentation/components/layout/Footer.css
+4,0K	./presentation/components/layout/Footer.tsx
+4,0K	./presentation/components/layout/MobileLayout.tsx
+4,0K	./presentation/components/layout/Navbar.tsx
+4,0K	./presentation/components/layout/Sidebar.css
+4,0K	./presentation/components/layout/Sidebar.tsx
+4,0K	./presentation/features/acrylic-plates/data/acrylicPlatesData.ts
+4,0K	./presentation/features/acrylic-plates/pages/AcrylicPlatesPage.tsx
+4,0K	./presentation/features/acrylic-plates/types/acrylicPlateType.ts
+4,0K	./presentation/features/calendars/components/CollapsibleSection.css
+4,0K	./presentation/features/calendars/components/CollapsibleSection.tsx
+4,0K	./presentation/features/calendars/data/calendarsData.ts
+4,0K	./presentation/features/calendars/pages/CalendarsPage.css
+4,0K	./presentation/features/calendars/pages/CalendarsPage.tsx
+4,0K	./presentation/features/calendars/types/calendarType.ts
+4,0K	./presentation/features/home/components/Accordion.css
+4,0K	./presentation/features/home/components/Accordionitem.tsx
+4,0K	./presentation/features/home/components/Accordion.tsx
+4,0K	./presentation/features/home/components/Carousel.tsx
+4,0K	./presentation/features/home/components/CatalogPreview.tsx
+4,0K	./presentation/features/home/data/AccordionData.ts
+4,0K	./presentation/features/home/HomeView.tsx
+4,0K	./presentation/features/home/hooks/Useaccordion.tsx
+4,0K	./presentation/features/home/hooks/useCarousel.ts
+4,0K	./presentation/features/home/pages/Accordionpage.tsx
+4,0K	./presentation/features/home/types/AccordionTypes.ts
+4,0K	./presentation/features/keychains/data/keychainsData.ts
+4,0K	./presentation/features/keychains/pages/KeychainPage.tsx
+4,0K	./presentation/features/keychains/types/keychainType.ts
+4,0K	./presentation/features/Mouse Pad/data/mousePadData.ts
+4,0K	./presentation/features/Mouse Pad/pages/MousePadPage.tsx
+4,0K	./presentation/features/Mouse Pad/types/mousePadType.ts
+4,0K	./presentation/features/mugs/components/ClickableWrapper.tsx
+4,0K	./presentation/features/mugs/components/MugTypeCarousel.tsx
+4,0K	./presentation/features/mugs/data/mugAnimeData.ts
+4,0K	./presentation/features/mugs/data/mugColors.ts
+4,0K	./presentation/features/mugs/data/mugFatherDay.ts
+4,0K	./presentation/features/mugs/data/mugsData.ts
+4,0K	./presentation/features/mugs/data/mugsMotherDay.ts
+8,0K	./presentation/features/mugs/data/mugVariants.ts
+4,0K	./presentation/features/mugs/hooks/useMugVariant.ts
+4,0K	./presentation/features/mugs/pages/MugAnimePage.tsx
+4,0K	./presentation/features/mugs/pages/MugFatherDayPage.tsx
+4,0K	./presentation/features/mugs/pages/MugMotherDayPage.tsx
+4,0K	./presentation/features/mugs/pages/MugPage.tsx
+4,0K	./presentation/features/mugs/types/mugType.ts
+4,0K	./presentation/features/products/components/ProductCard.tsx
+4,0K	./presentation/features/products/components/ProductGrid.tsx
+4,0K	./presentation/features/products/views/MugsView.tsx
+4,0K	./presentation/features/products/views/ToteBagsView.tsx
+4,0K	./presentation/features/shirts/components/ShirtsCaroucelComponent.css
+4,0K	./presentation/features/shirts/components/ShirtsCaroucelComponent.tsx
+4,0K	./presentation/features/shirts/data/shirtColors.ts
+8,0K	./presentation/features/shirts/data/shirtsCarouselData.ts
+4,0K	./presentation/features/shirts/data/shirtscollectionData.ts
+4,0K	./presentation/features/shirts/hooks/Useproductcarousel.tsx
+4,0K	./presentation/features/shirts/hooks/useShirtColor.ts
+4,0K	./presentation/features/shirts/hooks/useShirtDesign.ts
+4,0K	./presentation/features/shirts/pages/ShirtsDesignEditorPage.tsx
+4,0K	./presentation/features/shirts/types/ShirtsCaroucel.tsx
+4,0K	./presentation/features/shirts/types/shirtType.ts
+4,0K	./presentation/features/shirts/views/ShirtsView.tsx
+4,0K	./presentation/features/thermos/data/thermosData.ts
+4,0K	./presentation/features/thermos/pages/ThermosPage.tsx
+4,0K	./presentation/features/thermos/types/thermoType.ts
+4,0K	./presentation/features/tote-bags/data/toteBagColors.ts
+4,0K	./presentation/features/tote-bags/data/toteBagsData.ts
+4,0K	./presentation/features/tote-bags/pages/ToteBagPage.tsx
+4,0K	./presentation/features/water-bottles/data/waterBottlesData.ts
+4,0K	./presentation/features/water-bottles/pages/WaterBottlesPage.tsx
+4,0K	./presentation/features/water-bottles/types/waterBottleType.ts
+4,0K	./presentation/hooks/useScrollToBottom.ts
+4,0K	./presentation/pages/CategoryPage.tsx
+4,0K	./presentation/pages/HomePage.tsx
+4,0K	./presentation/pages/ProductsPage.tsx
+4,0K	./project_full_snapshot.txt
+4,0K	./shared/components/design-editor/ColorPalette.tsx
+4,0K	./shared/components/design-editor/ColorSelector.tsx
+4,0K	./shared/components/design-editor/DesignEditor.tsx
+4,0K	./shared/components/design-editor/DesignPreview.tsx
+4,0K	./shared/components/design-editor/DesignSizeSlider.tsx
+4,0K	./shared/components/design-editor/DesignUploader.tsx
+4,0K	./shared/constants/contact.ts
+4,0K	./shared/hooks/useDesignEditor.ts
+4,0K	./shared/hooks/usePointerDrag.ts
+4,0K	./shared/types/design-editor.tsx
+
+
+=== CONTENIDO DETALLADO DE CADA ARCHIVO ===
+
+
+=== ARCHIVOS GRANDES OMITIDOS (>1MB) ===

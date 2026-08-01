@@ -4,7 +4,7 @@ import termoTapaAcrilico from "../../../../assets/images/thermos/termo tapa acri
 import termoTapaRosca2 from "../../../../assets/images/thermos/termo tapa rosca 2.png";
 import termoStanley from "../../../../assets/images/thermos/termo stanley.png";
 import termoCarro from "../../../../assets/images/thermos/termo carro.png";
-import type { thermoType } from "../types/thermoType";
+import type { thermoType } from "../../../../domain/entities/thermoType";
 
 export const thermosData: thermoType[] = [
   { id: 1, name: "Termo Botón Transparente", price: "$25", image: termoBotonTransparente },

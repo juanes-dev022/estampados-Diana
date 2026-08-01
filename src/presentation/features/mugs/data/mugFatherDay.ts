@@ -1,4 +1,4 @@
-import type { mugType } from "../types/mugType";
+import type { mugType } from "../../../../domain/entities/mugType";
 
 export const mugsFatherDay: mugType[] = [
   { id: 1, name: "Mejor Papá del Mundo", price: "$18", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9yjMYs4Ra_5yLf_qaIQgJaYPbH6jMKlpZdA47QDIzw&s=10" },

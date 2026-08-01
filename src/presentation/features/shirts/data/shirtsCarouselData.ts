@@ -1,4 +1,4 @@
-import type { ShirtsCaroucel } from "../types/ShirtsCaroucel";
+import type { ShirtsCaroucel } from "../../../../domain/entities/entities-shirt/ShirtsCaroucelType";
 
 import algodonCuelloRedondoTallasMenores from "../../../../assets/images/shirts/algodon peinado cuello redondo tallas menores.jpeg";
 import algodonCuelloRedondoTallaMayores from "../../../../assets/images/shirts/algodon peinado cuello redondo.jpeg";

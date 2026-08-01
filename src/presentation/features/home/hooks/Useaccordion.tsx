@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { UseImageAccordionReturn } from '../types/AccordionTypes';
+import type { UseImageAccordionReturn } from '../../../../domain/entities/AccordionTypes';
 
 /**
  * Maneja qué panel de imagen está activo (expandido) y centraliza

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import type { ShirtsCaroucel } from "../types/ShirtsCaroucel";
+import type { ShirtsCaroucel } from "../../../../domain/entities/entities-shirt/ShirtsCaroucelType";
 
 export function useProductCarousel(products: ShirtsCaroucel[]) {
   const scrollRef = useRef<HTMLDivElement>(null);

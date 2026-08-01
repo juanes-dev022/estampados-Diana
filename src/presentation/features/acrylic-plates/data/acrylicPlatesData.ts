@@ -4,7 +4,7 @@ import drop from "../../../../assets/images/acrylic plates/drop.png";
 import menu from "../../../../assets/images/acrylic plates/menu.png";
 import soportePlacas from "../../../../assets/images/acrylic plates/soporte para placas.png";
 import soporte from "../../../../assets/images/acrylic plates/soporte.png";
-import type { acrylicPlateType } from "../types/acrylicPlateType";
+import type { acrylicPlateType } from "../../../../domain/entities/acrylicPlateType";
 
 export const acrylicPlatesData: acrylicPlateType[] = [
   { id: 1, name: "Placa Acrílica Ball", price: "$12", image: ball },

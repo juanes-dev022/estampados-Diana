@@ -13,7 +13,7 @@ import metalicoOvalado from "../../../../assets/images/keychains/metalico ovalad
 import metalicoRedondo from "../../../../assets/images/keychains/metalico redondo.png";
 import translucidoCasa from "../../../../assets/images/keychains/translucido casa.png";
 import placaAcrilica from "../../../../assets/images/keychains/placa acrilica.png";
-import type { keychainType } from "../types/keychainType";
+import type { keychainType } from "../../../../domain/entities/keychainType";
 
 export const keychainsData: keychainType[] = [
   { id: 1, name: "Llavero Acrílico Circular", price: "$8", image: acrilicoCircular },

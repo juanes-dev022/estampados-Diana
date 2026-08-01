@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import type { ImageAccordionItem } from '../types/AccordionTypes';
+import type { ImageAccordionItem } from '../../../../domain/entities/AccordionTypes';
 import { useAccordion } from '../hooks/Useaccordion';
 import { AccordionItem } from './Accordionitem';
 import './Accordion.css';

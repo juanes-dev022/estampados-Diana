@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 import ClickableWrapper from "../../mugs/components/ClickableWrapper";
-import type { mugType } from "../../mugs/types/mugType";
+import type { mugType } from "../../../../domain/entities/mugType";
 
 interface Props {
   products: mugType[];

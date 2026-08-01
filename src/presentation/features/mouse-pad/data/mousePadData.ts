@@ -16,7 +16,7 @@ import rellenoCojin from "../../../../assets/images/mouse pad/relleno cojin.png"
 import rompecabezas48Piezas from "../../../../assets/images/mouse pad/rompecabezas 48 piezas.png";
 import tarjetasDePvc from "../../../../assets/images/mouse pad/tarjetas de pvc.png";
 import tula from "../../../../assets/images/mouse pad/tula .png";
-import type { mousePadType } from "../types/mousePadType";
+import type { mousePadType } from "../../../../domain/entities/mousePadType";
 
 export const mousePadData: mousePadType[] = [
   { id: 1, name: "Cartón para Sublimar", price: "$5", image: cartonParaSublimar },

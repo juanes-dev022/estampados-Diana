@@ -2,7 +2,7 @@ import agenda80Hojas from "../../../../assets/images/calendars/agenda 80 hojas.p
 import agendaCuadricular from "../../../../assets/images/calendars/agenda cuadricular.png";
 import agendaHojaDatosBolsillo from "../../../../assets/images/calendars/agenda hoja de datos y bolsillo.png";
 import agendaHojaInicialSublimable from "../../../../assets/images/calendars/agenda hoja inicial sublimable.png";
-import type { calendarType } from "../types/calendarType";
+import type { calendarType } from "../../../../domain/entities/calendarType";
 
 export const calendarsData: calendarType[] = [
   { id: 1, name: "Agenda 80 Hojas", price: "", image: agenda80Hojas },

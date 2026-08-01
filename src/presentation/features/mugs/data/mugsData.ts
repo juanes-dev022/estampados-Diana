@@ -1,4 +1,4 @@
-import type { mugType } from "../types/mugType";
+import type { mugType } from "../../../../domain/entities/mugType";
 
 export const mugsData: mugType[] = [
   { id: 1, name: "Dia de la Madre", price: "", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0h4cnvo2b_aZUdRy0rqzVQlKqe2gEYwYvS6lkrJJug&s", to: "/mug/mugMotherDay" },
